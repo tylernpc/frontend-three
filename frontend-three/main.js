@@ -69,3 +69,12 @@ function animate() {
 }
 
 animate();
+
+const tylerTexture = new THREE.TextureLoader().load("Professional-Headshot.jpg")
+
+const tyler = new THREE.Mesh(
+  new THREE.BoxGeometry(3 ,3, 3),
+  new THREE.MeshBasicMaterial( { map: tylerTexture } )
+);
+
+scene.add(tyler);
